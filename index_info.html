@@ -32,56 +32,53 @@
 
   }
 
-  .info_teacher {
-
+  .news_lastest_bg {
     background-color:mediumseagreen;
     width: 100%;
     height: 650px;
-    text-align: center;
-	color: white;
-
-
-  }
-
-  .image_teacher {
-    width: 500px;
-	height: 300px;
-	background-color: white;
-	clear: both;
-	position:relative;
-	left: 55%;
-	bottom: 400px;
 	
-
   }
+	.news_lastest_container{
+		margin-right: auto;
+		margin-left: auto;
+		width: 1300px;
+		height: 550px;
+		padding-top: 100px;
+	}
+  .image_news_lastest {
+	
+  }
+	.img_detail{
+		width: 120px;
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+		opacity: 0.8;	
+		float: right;	
+		margin-top: 10px;
 
+	}
    .introuduce_text {
 		font-size: 60px;
 		width:600px;
 		color: white;
-		float: left;
-		margin-top:100px;
-		margin-left: 10%;
+		
 	   	text-align: left;
 	   	font-weight: bold;
   }
 	.introduce_abstract{
-		float: left;
 		color: white;
 		width: 600px;
-		margin-top: 300px;
-		position: relative;
-		left: -35%;
 		font-size: 22px;
 		line-height: 35px;
-		text-align: left
+		text-align: left;
+		
 	}
   .news {
     width: 1200px;
     height: 350px;
 	position: relative;
     background-color:white;
-	left: 17%;
 	float: left;
 	margin-bottom: 15px;
 	
@@ -140,7 +137,8 @@
     width: 100%;
     height: 150px;
     background-color: white;
-	float: left
+	float: left;
+	text-align: center;
 
 
    
@@ -166,20 +164,13 @@
   }
 
   .new_tags {
-    
     height: 40px;
 	font-size: 40px;
 	color: green;
-	margin-left: 282px;
     line-height: 40px;
     margin-top: 70px;
 	margin-bottom: 50px;
 	 
-	 
-
-	
-
-
   }
 
   .a_hover {
@@ -210,7 +201,6 @@
   }
 	#group_info{
 		font-size: 15px;
-
 		margin-top: 30px;
 		float: left;
 		margin-left: 200px;
@@ -225,24 +215,14 @@
 
 	}
 	.image_logo{
-		position: absolute;
-		right: 5%;
 		margin-top: 2px;
 	}
-	.img_detail{
-		position: relative;
-		float: right;
-		width: 600px;
-		bottom: 320px;
-		left:8%;
-		color: white;
-		text-decoration: none;
-		font-size: 18px;
-		opacity: 0.8
-	}
+
 
 	.img_detail:hover{
 		color:gray
+			
+			
 	}
 	.info_abstract{
 		font-size: 24px;
@@ -279,8 +259,7 @@
 		width:120px;
 		height: 50px;
 		line-height: 50px;
-		left: 12%;
-		position: absolute;
+		position: absolute;	
 		font-size: 18px;
 		border-radius:5px
 	}
@@ -291,24 +270,41 @@
 
 <head>
   <meta charset="utf-8"><!--搜索引擎 -->
-  <title>GEM_WEB</title>
+  <title>HomePages</title>
 
 </head>
 	
 <body>
 
   	<div class="all" style="overflow: hidden">
-			<div class="info_teacher">
-				<span class="introuduce_text">Generalized Electric Medicine Group </span>
-				<div class="introduce_abstract">The Generalized electric medicine Group is part of Faculty of Applied Sciences, Macao Polytechnic University. We develop digital solutions to make a difference in healthcare.</div>
-				<div class="image_teacher"><img width="550px" height="360px" src="AIheisongke.jpg" ></div>   <!-----w:550px  h:360px------>
-				<a  class="img_detail_hover" href="paper_info_frame_AIheisongke.html" target="_blank"  ><div class="img_detail">Read more&nbsp></div></a>
-			  </div>
+	
+			<div class="news_lastest_bg">
+				<div class="news_lastest_container">
+					<div class="c_left" style="width:600px;float:left">
+								<div class="introuduce_text">Generalized Electric Medicine Group </div>
+								<div class="introduce_abstract">The Generalized electric medicine Group is part of Faculty of Applied Sciences, Macao Polytechnic University. We develop digital solutions to make a difference in healthcare.</div>
+					</div>
+					
+					<div class="c_right" style="width:600px;float:right;margin-left:20px">
+								<div class="image_news_lastest"><img width="550px" height="360px" src="AIheisongke.jpg" ></div>   <!-----w:550px  h:360px------>
+								<div >  <a class="img_detail" href="paper_info_frame_AIheisongke.html" target="_blank">Read more&nbsp>  </a>   </div>
+						
+					</div>
+					
+					
+				
+					
+					
+					<!----<a  class="img_detail_hover" href="paper_info_frame_AIheisongke.html" target="_blank"  ><div class="img_detail">Read more&nbsp></div></a>---->
 
-			  <div class="new_tags">News</div>
+				</div>
+	
+			</div>
+
+			
 		
-		
-		
+		<div style="width: 1200px;margin: auto"> 
+		<div class="new_tags">News</div>
 		<!------新闻----->
 		<div class="news">
 				<div class="date_info">Oct 15, 2023, Sunday</div>
@@ -369,13 +365,16 @@
 				</div>
 
 			  </div>
-
 			<div class="All_news"><div class="more_news"><a class="more_news_a" href="">More news</a></div></div>
+	</div>
+			
 			  <div class="bottom_info"> 
 
-						<div id="group_info"> © Generalized Electric Medicine 2023 of Macao polytechnic university.</div>
+				  <div  style="width:1200px;height: 150px;margin: auto">
+				  		<div id="group_info"> © Generalized Electric Medicine 2023 of Macao polytechnic university.</div>
 						<div id="group_detail_info">The Generalized Electric Medicine is part of the Macao polytechnic university.</div>
 						<div class="image_logo"> <img src="gem_logopng.png"  style="height:140px;right: 0" ></div>
+			       </div>
 			  </div>
 
 	
