@@ -41,6 +41,7 @@
 		top: 250px;
 		left: 70px;
 		float:left;
+		font-size: 18px;
 		line-height: 30px;
 		font-size: 15px
 	}
@@ -53,6 +54,7 @@
   }
 	#group_info{
 		font-size: 15px;
+
 		margin-top: 30px;
 		float: left;
 		margin-left: 200px;
@@ -121,20 +123,16 @@
 		float: left;
 		position: relative;
 		top: 500px;
-		text-align: center;
 		margin-top: 20px;
 		
 	}
-	.project_example_images_{
-		float: left;
-		margin:15px;
-	}
 	.example_text{
 		width:1200px;
-		text-align: left;
+		text-align: center;
 		font-size: 15px;
 		line-height: 30px;
 		float: left;
+		
 		
 	}
 </style>
@@ -145,26 +143,26 @@
 
 <body>
 		<div class="container">
-				<div class="paper_title">Breast cancer detection and diagnosis</div>
-				<div class="paper_image"><img src="xiong_image.jpg"  width="300px" height="197px"></div>
+				<div class="paper_title">CLIP-Driven Universal Model for Tumor Detection Based on Magnetic Resonance Images</div>
+				<div class="paper_image"><img src="zhangzhuoneng_research_image.jpg"  width="300px" height="197px"></div>
 				<div class="paper_time">Published Wed 06 September 2023</div>
-				<div class="paper_info">The application of the computer-aided technology in medical imaging has achieved great success. We aim to research the computer-aided breast cancer detection and diagnosis on various kinds of medical images. There are many breast imaging techniques, such as X-ray, CT, MRI, ultrasonic, etc.
-
-Breast tumor and recognition and classification have become a research hotspot in the field of computer-aided diagnosis (CAD). The main research contents of breast images classification include image pre-processing, feature extraction, feature selection, benign and malignant tumor discrimination, and disease prediction modules. Among them, feature extraction is one of the most important steps. Traditional machine learning methods relying on the hand-crafted features lacks robustness in the classification of benign and malignant breast. Over the last ten years, a number of deep convolutional neural network (CNN) models, have been proposed for application to object detection and classification. CNN-based methods are widely used to extract high-dimensional abstract features from ultrasonic images, resulting in high-performance analysis in breast cancer diagnosis fields. However, the deep learning models needs to be trained on the large datasets to poor generalization.
-
-Collecting large datasets of medical images is not easy in the realistic scenes. As we all know, medical image datasets involve patient privacy. What is more, the labeling of medical ultrasound images often adds to the burden of work for physicians. Our mission is clear: improving the accuracy of benign and malignant breast tumor detection and diagnosis under the condition of existing scale data, using transformer and generative AI synthesized images.
- 
+				<div class="paper_info">
+					Tumor is one of the main causes of death in humans, and early detection and discovery of tumors through imaging means is crucial for patient treatment and prognosis. Magnetic Resonance Imaging (MRI) with an advantage of non-invasive, no radiation, and high spatial resolutions, which has been recognized as an important tool for screen and detection of tumor.
+					Therefore, Our main research objective is to develop an expansive unified model，specifically grounded in the analysis of magnetic resonance (MR) tumor images. This ambitious undertaking aims to furnish a multifaceted solution, concurrently addressing various pivotal tasks integral to tumor characterization. These tasks encompass, but are not limited to, precise segmentation, nuanced classification discerning between benign and malignant manifestations, and the sophisticated classification of tumors based on molecular attributes. The overarching objective is to devise a model of notable sophistication and versatility, capable of comprehensively enhancing the diagnostic capabilities within the realm of tumor analysis and contributing substantively to the field of medical imaging research.
+					
+					The specific research route is shown in fig 2, specifically, the universal model supports multi MR input forms, such as T1, T1w, T2, Flair, DWI, DCE, and ADC. In addition, it also supports multiple organ sites, such as brain, chest, and abdomen. In output part, the universal model supports different tasks, such as segmentation of tumor, classification of benign and malignant of tumor, classification of tumor molecular, and prediction of biochemical recurrence.
+					
+				
 </div>
 				<div class="return_index"><a  class="return_index_a" href="../research_frame.html" target="_blank" >← Back to overview</a></div>
 				<div class="project_leaders">Project leaders</div>
-				<div class="project_leaders_name">XiangyuXiong</div>
+				<div class="project_leaders_name">ZhuonengZhang</div>
 				<div class="project_example">Project Example</div>
-				<div class="project_example_images">
-						<div class="project_example_images_"><img src="example_1.png" height="200px" width="200px" ></div>
-						<div class="project_example_images_" ><img src="example_2.png" height="200px" width="200px" ></div>
-						<div class="project_example_images_"><img src="example_3.png" height="200px" width="200px" ></div>
-						<div class="project_example_images_" ><img src="example_4.png" height="200px" width="200px" ></div>
-					<div class="example_text">These pictures show the detection results of our breast cancer detection model in the ABUS data set, and the masses in the red border box are the breast masses detected by the model.</div>
+				<div class="project_example_images" style="margin-bottom: 50px">
+					<div class="project_example_images_"><img src="example_1.png"  width="500px" ></div>
+					<div class="example_text">Comparison of different models in segmentation of tumor</div>
+					
+					
 					
 			</div>
 		</div>
