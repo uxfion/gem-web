@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<style>
+	.container{
+		width: 1200px;
+		height: 800px;
+		margin: auto;
+		text-align: center;
+	
+				
+	}
+	.paper_title{
+		font-size: 22px;
+		color: green;
+		width: 1000px;
+		float: left;
+		position: relative;
+		top: 200px;
+	}
+	.paper_image{
+		float: left;
+		position: relative;
+		left: 18px;
+		top: 250px;	
+	}
+	.paper_time{
+		color: gainsboro;
+		width: 300px;
+		float: left;
+		font-size: 14px;
+		position: absolute;
+		top: 500px
+		
+		
+		
+	}
+	.paper_info{
+		width: 900px;
+		text-align: left;
+		position: relative;
+		top: 250px;
+		left: 70px;
+		float:left;
+		font-size: 18px;
+		line-height: 30px;
+		font-size: 15px
+	}
+ .bottom_info {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+	float: left;
+	margin-top: 500px;
+  }
+	#group_info{
+		font-size: 15px;
+
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+		
+	}
+#group_detail_info{
+		clear: both;
+		font-size: 15px;
+		margin-top: 30px;
+		float: left;
+		margin-left: 200px;
+
+	}
+	.image_logo{
+
+		margin-top: 2px;
+	}
+	.return_index{
+		color:green;
+		float: left;
+		position: relative;
+		top: 270px;
+		left: 370px;
+		
+	}
+	.return_index_a{
+		text-decoration: none;
+		color: green;
+	}
+	.return_index_a:hover{
+		text-decoration: underline;
+		color: darkgreen;
+	}
+		.project_leaders{
+		 color:green;
+		font-size: 22px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 300px;
+	
+		
+	}
+	.project_leaders_name{
+		color:black;
+		font-size: 16px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 320px;
+	
+	}
+	.project_example{
+		 color:green;
+		font-size: 22px;
+		text-align:left;
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 500px;
+	}
+	.project_example_images{
+		width: 1200px;
+		float: left;
+		position: relative;
+		top: 500px;
+		text-align: center;
+		margin-top: 20px;
+		
+	}
+	.project_example_images_{
+		float: left;
+		margin-right: 15px;
+	}
+</style>
+<head>
+<meta charset="utf-8">
+<title>paper_info</title>
+</head>
+
+<body>
+		<div class="container">
+				<div class="paper_title">Video-based animal behaviour recognition</div>
+				<div class="paper_image"><img src="example_1.png"  width="300px" height="197px"></div>
+				<div class="paper_time">Published Wed 06 September 2023</div>
+				<div class="paper_info">With the increasing demand of animal products has brought animal welfare analysis, as more researcher involves, especially into the analysis of the social interactions inside commercial farms, For instance, disruptive inter-animal interaction, e.g. tail-biting, stepping others, etc.. These behaviors will not only affect animal welfare, as consequences, it reduces the production of the farms. Hence, the detection and prevention of such behavior became more serious. Historically, commercial farms have been using RFID sensor for monitoring, however, such technique are expensive. Therefore we explore another routs, the video-based animal behavior recognition<p></p>
+
+				Recently, researchers have discovered that video surveillance is a better solution as it provides a low-cost and sustainable solution. This is also evidenced by the increasing advancements in artificial intelligence, such as Multiple Object Tracking (MOT), Joint Detection and Embedding (JDE), and Look Once (YOLO). These techniques are useful and proven to be effective. And the latest technique is MSQNet. Which eliminated the needs actor specific data, which unlocks unlimited possibility.
+				But that’s not enough. The current difficulty is to further improve the model to the next level. Towards multi-class classification in video-base recognition. <p></p>
+
+
+				Therefore, we propose a genius strategy. Let’s introduce addition information to the model from ground up from the available dataset (Animal Kingdom dataset). Add an addition class to it. And see if it improves the model precision and different evaluation matrices.And there’s it. By adding addition animal class (881 types) to the dataset. The further guide the model better classify the action plus the bonus animal class classification which make it classify two different things.But that’s not going to work well. Hence, we introduce another method. Let’s call it multi-phase transfer learning. By starting with just the action annotation with TimesformerInit for training, then join the animal class to it. Inspire from human learning stages.<p></p>
+
+				The research shows that by introduce an addition class to the model. In our case, the animal class. Also, with multi-phase transfer learning. The precision of the action recognition does not get improve versus default model ~74%. And the animal class classification precision is better than action recognition.<p></p>
+					
+				With sole join two class to the model. The situation is different. The model saturated at ~72% which means the multi-phase transfer approach kept the original precision while adding addition class for the model to classified. This model now can classified animal behavior while classified the type of the animal. <p></p>
+
+
+				With multi-phase transfer learning. The model is able to retain previous learned patterns. And without it. The model performance degraded.
+
+	
+</div>
+				<div class="return_index"><a  class="return_index_a" href="../research_frame.html" target="_blank" >← Back to overview</a></div>
+				<div class="project_leaders">Project leaders</div>
+				<div class="project_leaders_name">Stanley</div>
+				<div class="project_example">Project Example</div>
+				<div class="project_example_images">
+					<div class="project_example_images_"><img src="example_1.png" width=50% style="float: left"></div>
+					
+			</div>
+		</div>
+
+	
+	
+	 <div class="bottom_info"> 
+				  <div  style="width:1200px;height: 150px;margin: auto">
+				  		<div id="group_info"> © Generalized Electric Medicine 2023 of Macao polytechnic university.</div>
+						<div id="group_detail_info">The Generalized Electric Medicine is part of the Macao polytechnic university.</div>
+						<div class="image_logo"> <img src="../gem_logopng.png"  style="height:140px;right: 0" ></div>
+			       </div>
+			  </div>
+</body>
+</html>
