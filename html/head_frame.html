@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>title</title>
 <style>
 	* {
@@ -11,10 +12,21 @@
   }
 	#navigator {
 		background-color: white;
-		overflow: hidden
+		 overflow-x: scroll; /* 水平滚动 */
+ 		 overflow-y: hidden; /* 禁用垂直滚动 */
+ 		 white-space: nowrap; /* 防止菜单折行 */
+ 		 -webkit-overflow-scrolling: touch; /* 启用平滑滚动效果（仅适用于WebKit浏览器）*/
+ 		 scrollbar-width: none; /* 隐藏滚动条（适用于Mozilla Firefox）*/
+ 		 -ms-overflow-style: none; /* 隐藏滚动条（适用于IE和Edge）*/
 		
 		
   }
+	
+	#navigator::-webkit-scrollbar {
+ 	 display: none;
+}
+		
+	
 	h1 {
         color: green;
         font-size: 26px;
@@ -32,7 +44,8 @@
 		top: 65px;
 		position: absolute;
 		font-size: 12px;
-		margin-left: 33px
+		margin-left: 33px;
+		display: block;
 		
 		
   }
@@ -40,6 +53,7 @@
 		 text-decoration: none;
 		 color: green;
 		 margin-left: 30px;
+		 display: block
 
 
   }
@@ -83,11 +97,11 @@
 								 Generalized Electric Medicine
 							</a>
 						</h1>
-					
+						<div class="mpu_title">Macau Polytechnic University</div>
 					</div>
-					<div class="mpu_title">Macau Polytechnic University</div>
+					
 				</div>
-			`
+			
 			<div style="float: left">
 			
 				<ul class="uiList">
