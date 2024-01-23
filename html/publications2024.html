@@ -94,15 +94,15 @@
 		
 				<div class="navigator">
 						<ul class="uiList">
-							   <li class="li_hengxiang"><a href="publications2024.html" target="_blank" class="a_hover" >2024</a></li>
+							   <li class="li_hengxiang"><a href="publications2024.html" target="_blank" class="a_hover" style="color: green">2024</a></li>
 							   <li class="li_hengxiang"><a href="publications2023.html" target="_blank" class="a_hover" >2023</a></li>
-							   <li class="li_hengxiang"><a href="publications2022.html" target="_blank" class="a_hover" style="color: green">2022</a></li>				  
-							
+							   <li class="li_hengxiang"><a href="publications2022.html" target="_blank" class="a_hover">2022</a></li>	
+							   
 						</ul>
 		
 		
 				</div>
-				<div class="Year_title">2022</div>
+				<div class="Year_title">2024</div>
 				<div  class="publication_container">
 					<table id="data-table">
 					    <tr>
@@ -126,7 +126,7 @@
 							    // 遍历每条数据并创建表格行
 							    for (var i = 0; i < jsonData.length; i++) {
 							      // 判断year是否等于2022，如果是则跳过当前数据行
-							      if (jsonData[i].year === "2023") {
+							      if (jsonData[i].year !== "2024") {
 							        continue;
 							      }
 							
