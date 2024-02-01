@@ -94,15 +94,15 @@
 		
 				<div class="navigator">
 						<ul class="uiList">
-							   <li class="li_hengxiang"><a href="publications2024.html" target="_blank" class="a_hover" style="color: green">2024</a></li>
+							   <li class="li_hengxiang"><a href="publications2024.html" target="_blank" class="a_hover" >2024</a></li>
 							   <li class="li_hengxiang"><a href="publications2023.html" target="_blank" class="a_hover" >2023</a></li>
-							   <li class="li_hengxiang"><a href="publications2022.html" target="_blank" class="a_hover">2022</a></li>	
-							   <li class="li_hengxiang"><a href="publicationsother.html" target="_blank" class="a_hover" >Other Years</a></li>
+							   <li class="li_hengxiang"><a href="publications2022.html" target="_blank" class="a_hover" >2022</a></li>
+							   <li class="li_hengxiang"><a href="publicationsother.html" target="_blank" class="a_hover" style="color: green">Other Years</a></li>
 						</ul>
 		
 		
 				</div>
-				<div class="Year_title">2024</div>
+				<div class="Year_title">Other Years</div>
 				<div  class="publication_container">
 					<table id="data-table">
 					    <tr>
@@ -126,40 +126,40 @@
 							    // 遍历每条数据并创建表格行
 							    for (var i = 0; i < jsonData.length; i++) {
 							      // 判断year是否等于2022，如果是则跳过当前数据行
-							      if (jsonData[i].year !== "2024") {
+							      if (jsonData[i].year === "2024"|| jsonData[i].year === "2023"|| jsonData[i].year === "2022") {
 							        continue;
 							      }
 							
 							      var row = table.insertRow(); // 插入新行
 							
-							      // 创建单元格并填充数据
-							        var publisherCell = row.insertCell(0);
-							        publisherCell.innerHTML = jsonData[i].publisher !== undefined ? jsonData[i].publisher : "";
-							      
-							        var volumeCell = row.insertCell(1);
-							        volumeCell.innerHTML = jsonData[i].volume !== undefined ? jsonData[i].volume : "";
-							      
-							        var pagesCell = row.insertCell(2);
-							        pagesCell.innerHTML = jsonData[i].pages !== undefined ? jsonData[i].pages : "";
-							      
-							        var yearCell = row.insertCell(3);
-							        yearCell.innerHTML = jsonData[i].year !== undefined ? jsonData[i].year : "";
-							      
-							        var titleCell = row.insertCell(4);
-							        titleCell.innerHTML = jsonData[i].title !== undefined ? jsonData[i].title : "";
-							      
-							        var journalOrBooktitleCell = row.insertCell(5);
-							        if (jsonData[i].journal !== undefined) {
-							          journalOrBooktitleCell.innerHTML = jsonData[i].journal;
-							        } else if (jsonData[i].booktitle !== undefined) {
-							          journalOrBooktitleCell.innerHTML = jsonData[i].booktitle;
-							        } else {
-							          journalOrBooktitleCell.innerHTML = "";
-							        }
-							      
-							        var authorCell = row.insertCell(6);
-							        authorCell.innerHTML = jsonData[i].author !== undefined ? jsonData[i].author : "";
-							      }
+							     // 创建单元格并填充数据
+							       var publisherCell = row.insertCell(0);
+							       publisherCell.innerHTML = jsonData[i].publisher !== undefined ? jsonData[i].publisher : "";
+							     
+							       var volumeCell = row.insertCell(1);
+							       volumeCell.innerHTML = jsonData[i].volume !== undefined ? jsonData[i].volume : "";
+							     
+							       var pagesCell = row.insertCell(2);
+							       pagesCell.innerHTML = jsonData[i].pages !== undefined ? jsonData[i].pages : "";
+							     
+							       var yearCell = row.insertCell(3);
+							       yearCell.innerHTML = jsonData[i].year !== undefined ? jsonData[i].year : "";
+							     
+							       var titleCell = row.insertCell(4);
+							       titleCell.innerHTML = jsonData[i].title !== undefined ? jsonData[i].title : "";
+							     
+							       var journalOrBooktitleCell = row.insertCell(5);
+							       if (jsonData[i].journal !== undefined) {
+							         journalOrBooktitleCell.innerHTML = jsonData[i].journal;
+							       } else if (jsonData[i].booktitle !== undefined) {
+							         journalOrBooktitleCell.innerHTML = jsonData[i].booktitle;
+							       } else {
+							         journalOrBooktitleCell.innerHTML = "";
+							       }
+							     
+							       var authorCell = row.insertCell(6);
+							       authorCell.innerHTML = jsonData[i].author !== undefined ? jsonData[i].author : "";
+							     }
 					    }
 					</script>
 					<script type="text/javascript" src="output.json"></script>
