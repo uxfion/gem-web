@@ -63,7 +63,7 @@
 		font-size: 15px;
 		margin-top: 30px;
 		float: left;
-		margin-left: 200px;s
+		margin-left: 200px;
 
 	}
 	.image_logo{
@@ -153,6 +153,48 @@ This study aims to develop a good CT image quality assessment model by combining
 					<div class="project_example_images_"><img src="example_1.png"></div>
 					<div class="project_example_images_" ><img src="example_3.png" height="270px"></div>
 					<div class="project_example_images_" ><img src="example_4.png" ></div>
+			</div>
+			<div style="float: left;padding-top: 400px;height: 50px;width: 1200px"></div>
+		</div>
+	<div class="container" >
+				<div class="paper_title">Computed Tomography Image Quality Assessment Based on Deep Learning</div>
+				<div class="paper_image"><img src="example_202403.png" width="300px"></div>
+				<div class="paper_time">Published Sun 17 March 2023</div>
+				<div class="paper_info">
+					In view of the problems existing in the non-homogeneity of CT image quality in clinical diagnosis and storage and management of medical data, scientific research on the following key issues is planned to focus on the development of effective automated CT-IQA datasets and models:
+					<p></p>
+
+					(1) Dataset<P></P>
+					
+						At present, there are few publicly available data sets for CT-IQA. Most of the existing data sets are simulated and synthesized by adding noise. The quality of simulation data is very different and easy to distinguish, but it cannot fully capture the physiological and anatomical differences between real patients, and it is difficult to accurately simulate the complex lesions and pathological conditions existing in the clinic. Therefore, we will make innovative use of real data collected from multiple medical institutions such as Shenzhen People's Hospital to build three datasets: 1) Chest CT image quality assessment dataset; 2) Chest CT body position and artifact assessment data set; 3) Cross-modal medical image quality assessment dataset. As far as we know, no such dataset currently exists, which would fill a gap in the field of medical data.
+						<p></p>
+
+					(2) A multi-task model for chest CT-IQA and classification is proposed for the first time. <P></P>
+
+					The model is composed of backbone network, window and current classification module, assessment index regression module and quality assessment module modified by 3D VGG. This model can realize automatic classification and quality assessment of CT image window to a certain extent. To our knowledge, this is the first automated model to classify and evaluate the quality of CT images from different Windows..
+						<p></p>
+					
+					(3)  The pipeline of chest CT image position and artifact detection and quality assessment was innovatively proposed to effectively assist clinical diagnosis. <P></P>
+						
+					The deep learning model is first used to make regression prediction of the missing anatomical structure caused by the body dislocation, and then the presence and degree of artifacts are detected. The combination of the two effectively supplements the quality information of CT images, to automatically evaluate the quality of CT images.
+					
+						<p></p>
+					(4)  Innovative development of quality assessment models that can be used for different modes of medical images. <P></P>
+						
+					Based on the design model of global definition and local noise of medical images, the dual encoder structure of VGG improved by Hyper-conv and Swin-transformer is intended to be adopted for global and local feature extraction, and different modes are embedding as guidance information. It can improve network accuracy and generalization. The model enables automated quality assessment of medical images of multiple modes and anatomical sites. This will be the first universal quality assessment model for medical images of different modes.
+					
+						<p></p>
+				</div>
+				<div class="return_index"><a  class="return_index_a" href="../research_info.html">← Back to overview</a></div>
+			<div class="project_leaders">Project leaders</div>
+			<div class="project_leaders_name">SIYIXUN</div>
+			<div class="project_example">Project Example</div>
+			<div class="project_leaders">Partner Organisations</div>
+			<div class="project_leaders_name">深圳人民医院<P></P>上海交通大学</div>
+					
+			<div class="project_example_images">
+					<div class="project_example_images_"><img src="example_202403.png"></div>
+
 			</div>
 			<div class="bottom_info"> 
 				  <div  style="width:1200px;height: 150px;margin: auto;float: ">
