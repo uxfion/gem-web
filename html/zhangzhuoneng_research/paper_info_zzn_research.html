@@ -179,6 +179,7 @@ The results of tumor segmentation and classification using APT image sequences d
 
 The proposed deep learning multi-task model, when combined with APT image sequences, enhances the accuracy of breast tumor segmentation. This approach provides a novel idea for breast tumor diagnosis, offering potential improvements in diagnostic accuracy and patient care.<P></P>
 					
+						<P>As a new non-invasive imaging technology with a unique contrast mechanism, Amide Proton Transfer Weighted (APTw) imaging has shown its potential in the diagnosis, treatment evaluation, and prognosis prediction of breast cancer. The signal contrast between the lesion and the surrounding glandular tissue is low on the anatomical images obtained using the APTw imaging sequence in comparison to conventional anatomical dynamic contrast-enhanced MR images, which leads to subjective and inconsistent identification of the lesion for clinicians. However, breast lesion regions and their surrounding glandular tissues exhibit different APT effects, which can be utilized to enhance the segmentation accuracy of breast lesion regions on acquired anatomical images of the APTw sequence. Therefore, this paper proposes a breast lesion region segmentation network based on the model that incorporates APTw parameter map fitting and pathological classification for automatic lesion region segmentation. In addition, this paper demonstrates the importance of each frequency in APTw imaging for clinical tasks. It improves the interpretability of the network, allowing clinicians to understand its functionality better. We conducted experiments on 164 cases of originally acquired images of the APTw sequence, with lesion regions being jointly labeled as ground truth by three senior radiologists. The results show that the proposed method performs well in lesion region segmentation on images of APT sequence. Compared with these advanced methods such as U-Net, SAM, and TransBTS, our method achieves higher accuracy. Additionally, the model's interpretable contribution to different frequency offsets aligns with clinical observations.</P>
 				
 				</div>
 			
@@ -198,11 +199,44 @@ The proposed deep learning multi-task model, when combined with APT image sequen
 				<div class="project_example_images" style="margin-bottom: 50px">
 					<div class="project_example_images_"><img src="example_1.png"  width="500px" ></div>
 					<div class="example_text">Comparison of different models in segmentation of tumor</div>
-					<div class="project_example_images_" style="margin-top: 50px"><img src="yqh_example_1.png"  width="500px"  ></div>
+				
 					
 					
 					
 			</div>
+
+				<div class="project_example_images" style="margin-bottom: 50px">
+					<div class="project_example_images_"><img src="yqh_example_2.png"  width="500px" ></div>
+					<div class="example_text"> Overview of the network. The network consists of three modules segmentation, parameter map fitting, and pathological classification.</div>
+				
+					
+					
+					
+			</div>
+				<div class="project_example_images" style="margin-bottom: 50px">
+					<div class="project_example_images_"><img src="yqh_example_3.png"  width="500px" ></div>
+					<div class="example_text">Results of different models.</div>
+					
+					
+					
+					
+			</div>
+				<div class="project_example_images" style="margin-bottom: 50px">
+					<div class="project_example_images_"><img src="yqh_example_4.png"  width="500px" ></div>
+					<div class="example_text"> Line chart illustrating the weights of each slice in the APTw imaging sequence across various network structures</div>
+				
+					
+					
+			</div>
+				<div class="project_example_images" style="margin-bottom: 50px">
+					<div class="project_example_images_"><img src="yqh_example_5.png"  width="500px" ></div>
+					<div class="example_text">The actual APTw parameter map and our predicted APTw parameter map. The first column represents the mask overlaid on a slice of the APTw imaging sequence, while the second column displays the true APTw parameter map</div>
+				
+					
+					
+			</div>
+				
+			
 			
 		</div>
 	
