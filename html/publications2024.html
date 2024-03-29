@@ -111,7 +111,7 @@
 					      <th>Pages</th>
 					      <th>Year</th>
 					      <th>Title</th>
-					      <th>Journal/Conference</th>
+					      <th>Journal/Conference/Patent</th>
 					      <th>Author</th>
 					    </tr>
 					  </table>
@@ -129,6 +129,9 @@
 							      if (jsonData[i].year !== "2024") {
 							        continue;
 							      }
+								  // if (jsonData[i].groups === "patent") {
+								  //   continue;
+								  // }
 							
 							      var row = table.insertRow(); // 插入新行
 							
@@ -153,6 +156,8 @@
 							          journalOrBooktitleCell.innerHTML = jsonData[i].journal;
 							        } else if (jsonData[i].booktitle !== undefined) {
 							          journalOrBooktitleCell.innerHTML = jsonData[i].booktitle;
+							        } else if (jsonData[i].groups === "patent") {
+							          journalOrBooktitleCell.innerHTML = "Patent";
 							        } else {
 							          journalOrBooktitleCell.innerHTML = "";
 							        }
