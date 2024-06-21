@@ -12,7 +12,7 @@
 	.paper_title{
 		font-size: 22px;
 		color: green;
-		width: 1000px;
+		width: 1100px;
 		float: left;
 		position: relative;
 		top: 200px;
@@ -142,14 +142,14 @@
 <head>
 <meta charset="utf-8">
 <title>paper_info</title>
-</head>
+</head>	
 
 <body>
 		<div class="container">
-				<div class="paper_title">CLIP-Driven Universal Model for Tumor Detection Based on Magnetic Resonance Images</div>
-				<div class="paper_image"><img src="zhangzhuoneng_research_image.jpg"  width="300px" height="197px"></div>
+				<div class="paper_title">MRI imaging analysis aimed at enhancing MRI quality and reducing MRI imaging time</div>
+				<div class="paper_image"><img src="APT_FAST.png"  width="300px" height="197px"></div>
 				<div class="paper_time">Published Wed 06 September 2023</div>
-				<div class="paper_info">
+				<!-- <div class="paper_info">
 					Tumors are a leading cause of death in humans, underscoring the critical importance of early detection and diagnosis through imaging techniques. Magnetic Resonance Imaging (MRI) has emerged as a valuable tool for tumor screening and detection due to its non-invasive nature, absence of radiation, and high spatial resolution.<P></P>
 
 Therefore, our primary research objective is to develop a comprehensive and unified model specifically designed for the analysis of magnetic resonance (MR) tumor images. This ambitious undertaking aims to provide a multifaceted solution that concurrently addresses various pivotal tasks integral to tumor characterization. These tasks include, but are not limited to, precise tumor segmentation, nuanced classification to discern between benign and malignant manifestations, and sophisticated classification of tumors based on molecular attributes. Our overarching objective is to devise a model of notable sophistication and versatility, capable of comprehensively enhancing the diagnostic capabilities within the realm of tumor analysis and making substantive contributions to the field of medical imaging research.<P></P>
@@ -161,27 +161,37 @@ Our aim is to design a model that is not only versatile in terms of input variat
 Through our research, we strive to advance the field of medical imaging by developing a sophisticated and comprehensive model that can effectively analyze MR tumor images. By enabling precise segmentation, accurate classification, and molecular characterization of tumors, we aim to enhance the overall understanding and management of tumors, ultimately improving patient outcomes.<P></P>
 					
 				
+				</div> -->
+				<div class="paper_info">
+					<p style="font-size: 18px;color: green;position: relative;;top: -20px;">APT fast imaging</p>
+					<p style="position: relative;;top: -20px;"> Reducing the acquisition time of the Amide Proton Transfer (APT) technique is crucial for its widespread application. One way to reduce the scanning time is by decreasing the frequency offsets used during image acquisition, which might compromise the quantification of the APT effect. In our study, we develop a deep learning-based model that can reconstruct dense frequency offsets from sparse ones, potentially reducing scanning time. We propose using convLSTM to extract both short and long-range spatial and frequency features of APT imaging sequences. Our proposed model outperforms other seq2seq models, achieving superior reconstruction with a peak signal-to-noise ratio of 45.8 (95% confidence interval (CI)): [44.9 46.7]), and a structural similarity index of 0.989 (95% CI:[0.987 0.993]) for the tumor region. We have integrated a weighted layer into our model to evaluate the impact of individual frequency offsets on the reconstruction process. The weights assigned to the frequency offset at ± 6.5 ppm, 0 ppm, and 3.5 ppm demonstrate higher significance as learned by the model. Experimental results demonstrate that our proposed model effectively reconstructs dense APT imaging sequences (+7 to -7 with 0.5 ppm as interval) from data with 21 frequency offsets, reducing scanning time by 25%. This work presents a method for lowering the APT imaging time, offering potential guidance for parameter settings in physical devices during APT imaging and serving as a valuable reference for clinicians.</p>
+				
 				</div>
 			
 				
 				<div style="margin-top: 100px; float: left">
-					<div class="paper_title">An Explainable MRI Framework for Breast Tumor Using Amide Proton Transfer Weighted Imaging</div>
-					<div class="paper_image"><img src="yqh_example_1.png"  width="300px" height="197px"></div>
-					<div class="paper_time" style="margin-top: 900px">Published Wed 06 September 2023</div>
-					<div class="paper_info">
-						Breast cancer is a malignant disease that poses a significant threat to women's health. Early detection and timely treatment are crucial for improving the survival rate of breast cancer patients. Magnetic Resonance Imaging (MRI) has gained international recognition as an effective method for breast cancer detection. It offers high safety and is suitable for routine breast screening.<P></P>
-
-MRI has the advantage of providing high-resolution images with excellent soft tissue resolution. However, it presents challenges in clinical applications, such as uneven gray levels and fuzzy boundaries, which make tumor segmentation difficult.<P></P>
-
-In this context, we propose an interpretable breast tumor segmentation network based on multi-task learning, utilizing APT (Amide Proton Transfer) image sequences. APT image sequences exhibit distinctive APTw (Amide Proton Transfer-weighted) effects in breast tumors and the surrounding glandular tissues. Our method combines APT parameter maps with pathological data to assist in the tumor segmentation task. We employ a convolutional neural network to extract features from APT image sequences and analyze the contribution of different pulse frequencies to segmentation, enhancing the interpretability of the model.<P></P>
-
-The results of tumor segmentation and classification using APT image sequences demonstrate that different pulse frequencies have varying importance in the segmentation outcomes. By selecting the imaging frequency based on importance, the imaging time can be reduced, optimizing efficiency. Furthermore, the combination of APT parametric maps and pathological data yields superior segmentation results compared to using APT image sequences alone. This indicates that the APT effect contributes to improving the accuracy of tumor segmentation.<P></P>
-
-The proposed deep learning multi-task model, when combined with APT image sequences, enhances the accuracy of breast tumor segmentation. This approach provides a novel idea for breast tumor diagnosis, offering potential improvements in diagnostic accuracy and patient care.<P></P>
+					<div class="paper_title">Execution of downstream task analysis, such as whole-omics and tumor segmentation, among others.</div>
+					<div class="paper_image"><img src="yqh_example_2.png"  width="300px" height="197px"></div>
+					<div class="paper_time" style="margin-top: 600px">Published Wed 06 September 2023</div>
+					<div class="paper_info" style="margin-bottom: 100px;">
+						<p style="font-size: 18px;color: green;position: relative;;top: -20px;">APT Segmentation</p>
+						<p>As a new magnetic resonance imaging technology with a unique contrast mechanism, Amide Proton Transfer Weighted (APTw) imaging has shown its potential in the diagnosis, treatment evaluation, and prognosis prediction of breast cancer. The signal contrast between the lesion and the surrounding glandular tissue is low on the anatomical images obtained using the APTw imaging sequence in comparison to conventional anatomical dynamic contrast-enhanced MR images, which leads to subjective and inconsistent identification of the lesion for clinicians. However, breast lesion regions and their surrounding glandular tissues exhibit different APT effects, which can be utilized to enhance the segmentation accuracy of breast lesion regions on acquired anatomical images of the APTw sequence. Therefore, this paper proposes a breast lesion region segmentation network based on the model that incorporates APTw parameter map fitting and pathological classification for automatic lesion region segmentation. In addition, this paper demonstrates the importance of each frequency in APTw imaging for clinical tasks. It improves the interpretability of the network, allowing clinicians to understand its functionality better. We conducted experiments on 164 cases of originally acquired images of the APTw sequence, with lesion regions being jointly labeled as ground truth by three senior radiologists. The results show that the proposed method performs well in lesion region segmentation on images of APT sequence. Compared with these advanced methods such as U-Net, SAM, and TransBTS, our method achieves higher accuracy. Additionally, the model's interpretable contribution to different frequency offsets aligns with clinical observations.</p>
 					
-						<P>As a new non-invasive imaging technology with a unique contrast mechanism, Amide Proton Transfer Weighted (APTw) imaging has shown its potential in the diagnosis, treatment evaluation, and prognosis prediction of breast cancer. The signal contrast between the lesion and the surrounding glandular tissue is low on the anatomical images obtained using the APTw imaging sequence in comparison to conventional anatomical dynamic contrast-enhanced MR images, which leads to subjective and inconsistent identification of the lesion for clinicians. However, breast lesion regions and their surrounding glandular tissues exhibit different APT effects, which can be utilized to enhance the segmentation accuracy of breast lesion regions on acquired anatomical images of the APTw sequence. Therefore, this paper proposes a breast lesion region segmentation network based on the model that incorporates APTw parameter map fitting and pathological classification for automatic lesion region segmentation. In addition, this paper demonstrates the importance of each frequency in APTw imaging for clinical tasks. It improves the interpretability of the network, allowing clinicians to understand its functionality better. We conducted experiments on 164 cases of originally acquired images of the APTw sequence, with lesion regions being jointly labeled as ground truth by three senior radiologists. The results show that the proposed method performs well in lesion region segmentation on images of APT sequence. Compared with these advanced methods such as U-Net, SAM, and TransBTS, our method achieves higher accuracy. Additionally, the model's interpretable contribution to different frequency offsets aligns with clinical observations.</P>
-				
-				</div>
+					</div>
+						
+						
+
+						<div class="paper_image"><img src="zhangzhuoneng_research_image.jpg"  width="300px" height="197px"></div>
+						<div class="paper_time" style="margin-top: 520px">Published Wed 06 September 2023</div>
+						<div class="paper_info">
+							<p style="font-size: 18px;color: green;position: relative;;top: -20px;">CLIP-Driven Universal Model for Tumor Detection Based on Magnetic Resonance Images</p>
+							<p>Tumors are a leading cause of death in humans, underscoring the critical importance of early detection and diagnosis through imaging techniques. Magnetic Resonance Imaging (MRI) has emerged as a valuable tool for tumor screening and detection due to its non-invasive nature, absence of radiation, and high spatial resolution.
+								Therefore, our primary research objective is to develop a comprehensive and unified model specifically designed for the analysis of magnetic resonance (MR) tumor images. This ambitious undertaking aims to provide a multifaceted solution that concurrently addresses various pivotal tasks integral to tumor characterization. These tasks include, but are not limited to, precise tumor segmentation, nuanced classification to discern between benign and malignant manifestations, and sophisticated classification of tumors based on molecular attributes. Our overarching objective is to devise a model of notable sophistication and versatility, capable of comprehensively enhancing the diagnostic capabilities within the realm of tumor analysis and making substantive contributions to the field of medical imaging research.
+								The specific research route is illustrated in Figure 2. The universal model we are developing supports multiple forms of MR input, such as T1, T1w, T2, Flair, DWI, DCE, and ADC. Additionally, it accommodates multiple organ sites, including the brain, chest, and abdomen. In terms of output, the universal model supports various tasks, such as tumor segmentation, classification of benign and malignant tumors, classification of tumor molecular characteristics, and prediction of biochemical recurrence.
+								Our aim is to design a model that is not only versatile in terms of input variations and organ sites but also capable of performing diverse tasks related to tumor analysis. By encompassing a wide range of tumor-related aspects, our research endeavors to provide clinicians with a powerful tool that aids in accurate diagnosis, prognosis, and treatment planning.
+								Through our research, we strive to advance the field of medical imaging by developing a sophisticated and comprehensive model that can effectively analyze MR tumor images. By enabling precise segmentation, accurate classification, and molecular characterization of tumors, we aim to enhance the overall understanding and management of tumors, ultimately improving patient outcomes.</p>
+						</div>return_index
+					
 			
 				</div>
 				<div class="return_index"><a  class="return_index_a" href="../research_info.html"  >← Back to overview</a></div>
@@ -192,53 +202,11 @@ The proposed deep learning multi-task model, when combined with APT image sequen
 				<div class="project_leaders">Partner Organisations</div>
 				<div class="project_leaders_name">National Cancer Center <P></P>National Clinical Research Center for Cancer<p></p>Cancer Hospital & Shenzhen Hospital</div>
 					
-			
+				
 		
 			
 				<div class="project_example">Project Example</div>
-				<div class="project_example_images" style="margin-bottom: 50px">
-					<div class="project_example_images_"><img src="example_1.png"  width="500px" ></div>
-					<div class="example_text">Comparison of different models in segmentation of tumor</div>
 				
-					
-					
-					
-			</div>
-
-				<div class="project_example_images" style="margin-bottom: 50px">
-					<div class="project_example_images_"><img src="yqh_example_2.png"  width="500px" ></div>
-					<div class="example_text"> Overview of the network. The network consists of three modules segmentation, parameter map fitting, and pathological classification.</div>
-				
-					
-					
-					
-			</div>
-				<div class="project_example_images" style="margin-bottom: 50px">
-					<div class="project_example_images_"><img src="yqh_example_3.png"  width="500px" ></div>
-					<div class="example_text">Results of different models.</div>
-					
-					
-					
-					
-			</div>
-				<div class="project_example_images" style="margin-bottom: 50px">
-					<div class="project_example_images_"><img src="yqh_example_4.png"  width="500px" ></div>
-					<div class="example_text"> Line chart illustrating the weights of each slice in the APTw imaging sequence across various network structures</div>
-				
-					
-					
-			</div>
-				<div class="project_example_images" style="margin-bottom: 50px">
-					<div class="project_example_images_"><img src="yqh_example_5.png"  width="500px" ></div>
-					<div class="example_text">The actual APTw parameter map and our predicted APTw parameter map. The first column represents the mask overlaid on a slice of the APTw imaging sequence, while the second column displays the true APTw parameter map</div>
-				
-					
-					
-			</div>
-				
-			
-			
-		</div>
 	
 	
 	 <div class="bottom_info"> 
