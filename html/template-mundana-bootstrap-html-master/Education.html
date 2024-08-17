@@ -15,13 +15,80 @@
 <link href="./assets/css/main.css" rel="stylesheet"/>
 </head>
 <body>
-<style>
-	#publication-container {
-		overflow-x: auto; /* 在容器宽度小于表格宽度时允许水平滚动 */
-	}
-
-
-</style>
+    <style>
+       		/* 通用样式 */
+		.nav-link:hover {
+			color: #EA2F65;
+		}
+	
+		.nav-link.active:hover {
+			color: #EA2F65;
+		}
+	
+		#data-table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+	
+		#data-table th, #data-table td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+	
+		/* 添加间隔行颜色 */
+		#data-table tr:nth-child(odd) {
+			background-color: #f9f9f9; /* 浅灰色用于奇数行 */
+		}
+	
+		#data-table tr:nth-child(even) {
+			background-color: #ffffff; /* 白色用于偶数行 */
+		}
+	
+		/* 响应式设计 */
+		@media screen and (max-width: 600px) {
+			/* 隐藏表格的所有头部（标题行） */
+			#data-table th {
+				display: none;
+			}
+	
+			/* 每行表现为块级元素 */
+			#data-table, #data-table tbody, #data-table tr, #data-table td {
+				display: block;
+				width: 100%;
+			}
+	
+			/* 设置数据标签，左侧显示 */
+			#data-table td {
+				text-align: left; /* 左对齐 */
+				position: relative;
+				border-bottom: none; /* 移除默认底部边框 */
+			}
+	
+			/* 在数据前添加标签，仅在必要时显示 */
+			#data-table td:before {
+				content: attr(data-label);
+				position: absolute;
+				left: 0;
+				width: 50%; /* 标签宽度 */
+				padding-right: 10px; /* 右侧内边距 */
+				white-space: nowrap; /* 避免换行 */
+				font-weight: bold;
+				text-align: right; /* 标签右对齐 */
+			}
+	
+			/* 在每个记录后添加分割线 */
+			#data-table tr {
+				border-bottom: 1px solid #ddd; /* 添加分割线 */
+			}
+	
+			/* 隐藏 Publisher, Volume, Pages 列 */
+			#data-table td:nth-child(1),
+			#data-table td:nth-child(4) { /* 第三列 Pages */
+				display: none;
+			}
+		}
+    </style>
 <!--------------------------------------
 NAVBAR
 --------------------------------------->
@@ -37,22 +104,25 @@ NAVBAR
 				<a class="nav-link" href="./index.html">Homepage<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="./article.html">Research</a>
+				<a class="nav-link" href="./all_research.html">Research</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="./article.html">Publications</a>
+				<a class="nav-link" href="./Publication2024.html">Publications</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="./article.html">Team</a>
+				<a class="nav-link" href="./Team.html">Team</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="./article.html">Demo-solutions</a>
+				<a class="nav-link" href="./Demo_show.html">Demo-solutions</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="./article.html">Partners</a>
+					<a class="nav-link" href="./Vancancies.html">Vancancies</a>
+				</li>   
+				<li class="nav-item">
+				<a class="nav-link" href="./Partners.html">Partners</a>
 				</li>            
 				<li class="nav-item">
-				<a class="nav-link" href="./about.html">Education</a>
+				<a class="nav-link" href="./Education.html">Education</a>
 				</li>
 				<li class="nav-item">
 				<a class="nav-link" href="./Contact.html">Contact</a>
@@ -86,7 +156,7 @@ HEADER
 					</div>
 				
 				</div>
-				<div class="col-md-6 pr-0 d-flex justify-content-center align-items-center" style="height: 100%; padding-top: 10%;;padding-bottom: 10%;">
+				<div class="col-md-6 pr-0 d-flex justify-content-center align-items-center" style="height: 100%;">
 					<!-- <img src="./news_20230309/rong_2.jpg" > -->
 					
 					<!-- <div style="width: 509px;height: 600px;background-image: url(./news_20231214/new_pic.png);  background-size: contain; background-position: center center;   background-repeat: no-repeat;"></div> -->
